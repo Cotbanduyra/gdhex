@@ -7,10 +7,10 @@ int main(int argc, char** argv){
         
         long long int number;
         for (short i = 1; i < argc; i++){
-            if (argv[i][1] == 'b')  number = stoll(argv[i], nullptr, 2);
-            else if (argv[i][1] == 'x') number = stoll(argv[i], nullptr, 16);
+            number = 0;
+            if (argv[i][1] == 'b')  number |= stoull(argv[i], nullptr, 2);
+            else if (argv[i][1] == 'x') number |= stoull(argv[i], nullptr, 16);
             else    number = stoll(argv[i]);
-            
             cout << dec << argv[i] << "  --  ";
             cout << hex;
             if (number < 0)
