@@ -1,1 +1,1 @@
-If you want to convert normal digits to godot hex, this will help you.
+If you want to convert hex, bin or dec to godot hex, this will help you.
